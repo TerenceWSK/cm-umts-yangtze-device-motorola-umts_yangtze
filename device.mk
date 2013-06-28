@@ -13,11 +13,11 @@
 # limitations under the License.
 
 #
-# This is the product configuration for a full umts_spyder
+# This is the product configuration for a full umts_yangtze
 #
 $(call inherit-product, device/motorola/omap4-common/common.mk)
 
-DEVICE_FOLDER := device/motorola/umts_spyder
+DEVICE_FOLDER := device/motorola/umts_yangtze
 
 # Device overlay
     DEVICE_PACKAGE_OVERLAYS += $(DEVICE_FOLDER)/overlay
@@ -25,10 +25,10 @@ DEVICE_FOLDER := device/motorola/umts_spyder
 
 # Hardware HALs
 PRODUCT_PACKAGES += \
-    power.umts_spyder \
-    camera.umts_spyder \
-    lights.umts_spyder \
-    hwcomposer.umts_spyder
+    power.umts_yangtze \
+    camera.umts_yangtze \
+    lights.umts_yangtze \
+    hwcomposer.umts_yangtze
 
 # Modem
 PRODUCT_PACKAGES += \
@@ -47,5 +47,5 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_FOLDER)/vold.fstab:system/etc/vold.fstab
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
-$(call inherit-product-if-exists, vendor/motorola/umts_spyder/umts_spyder-vendor.mk)
+$(call inherit-product-if-exists, vendor/motorola/umts_yangtze/umts_yangtze-vendor.mk)
 $(call inherit-product-if-exists, vendor/motorola/omap4-common/common-vendor-pvr.mk)

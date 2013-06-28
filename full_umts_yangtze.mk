@@ -14,27 +14,27 @@
 
 #
 # This file is the build configuration for a full Android
-# build for umts_spyder hardware. This cleanly combines a set of
+# build for umts_yangtze hardware. This cleanly combines a set of
 # device-specific aspects (drivers) with a device-agnostic
 # product configuration (apps). Except for a few implementation
 # details, it only fundamentally contains two inherit-product
-# lines, full and umts_spyder, hence its name.
+# lines, full and umts_yangtze, hence its name.
 #
 
 # Camera and Gallery
 PRODUCT_PACKAGES := \
     Gallery
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=umts_spyder
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=umts_yangtze
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-# Inherit from umts_spyder device
-$(call inherit-product, device/motorola/umts_spyder/device.mk)
+# Inherit from umts_yangtze device
+$(call inherit-product, device/motorola/umts_yangtze/device.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_umts_spyder
-PRODUCT_DEVICE := umts_spyder
+PRODUCT_NAME := full_umts_yangtze
+PRODUCT_DEVICE := umts_yangtze
 PRODUCT_BRAND := MOTO
 PRODUCT_MANUFACTURER := MOTO
-PRODUCT_MODEL := MOTOROLA RAZR
+PRODUCT_MODEL := MOTOROLA RAZR V

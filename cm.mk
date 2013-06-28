@@ -1,5 +1,5 @@
 # Inherit device configuration for VZW Droid RAZR.
-$(call inherit-product, device/motorola/umts_spyder/full_umts_spyder.mk)
+$(call inherit-product, device/motorola/umts_yangtze/full_umts_yangtze.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
@@ -10,12 +10,12 @@ $(call inherit-product, vendor/cm/config/gsm.mk)
 #
 # Setup device specific product configuration.
 #
-PRODUCT_NAME := cm_umts_spyder
+PRODUCT_NAME := cm_umts_yangtze
 PRODUCT_BRAND := RTGB
-PRODUCT_DEVICE := umts_spyder
-PRODUCT_MODEL := XT910
+PRODUCT_DEVICE := umts_yangtze
+PRODUCT_MODEL := XT885
 PRODUCT_MANUFACTURER := MOTO
-PRODUCT_RELEASE_NAME := MOTOROLA RAZR
+PRODUCT_RELEASE_NAME := MOTOROLA RAZR V
 PRODUCT_SFX := umts
 
 # Boot animation

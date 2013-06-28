@@ -1,4 +1,4 @@
-Device configuration for the GSM Motorola Razr (UMTS Spyder)
+Device configuration for the GSM Motorola Razr (UMTS Yangtze)
 ===============================
 
  Licensed under the Apache License, Version 2.0 (the "License");

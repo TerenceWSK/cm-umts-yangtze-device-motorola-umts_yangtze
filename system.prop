@@ -1,5 +1,5 @@
 #
-# system.prop for UMTS Spyder
+# system.prop for UMTS Yangtze
 #
 
 # directory assistance number
@@ -208,3 +208,10 @@ ro.telephony.ril.v3=writeaidonly,signalstrength
 # Vold switchability uncomment second line to swap
 ro.vold.switchablepair=/storage/sdcard0,/storage/sdcard1
 #persist.sys.vold.switchexternal=1
+
+# Enable ADB
+persist.service.adb.enable=1
+
+# Stop VM from storing DEX into /cache
+dalvik.vm.dexopt-data-only=1
+
