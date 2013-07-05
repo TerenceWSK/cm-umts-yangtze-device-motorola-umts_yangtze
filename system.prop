@@ -215,3 +215,6 @@ persist.service.adb.enable=1
 # Stop VM from storing DEX into /cache
 dalvik.vm.dexopt-data-only=1
 
+# Set the region for HWC
+persist.hwc.mirroring.region=0:0:540:960
+

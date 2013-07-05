@@ -11,7 +11,7 @@ $(call inherit-product, vendor/cm/config/gsm.mk)
 # Setup device specific product configuration.
 #
 PRODUCT_NAME := cm_umts_yangtze
-PRODUCT_BRAND := RTGB
+PRODUCT_BRAND := GOPISE
 PRODUCT_DEVICE := umts_yangtze
 PRODUCT_MODEL := XT885
 PRODUCT_MANUFACTURER := MOTO

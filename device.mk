@@ -35,7 +35,7 @@ PRODUCT_PACKAGES += \
     Stk
 
 # Kexec files
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     $(DEVICE_FOLDER)/init.target.rc:root/init.target.rc \
     $(DEVICE_FOLDER)/kexec/devtree:system/etc/kexec/devtree \
     $(OUT)/ramdisk.img:system/etc/kexec/ramdisk.img \
