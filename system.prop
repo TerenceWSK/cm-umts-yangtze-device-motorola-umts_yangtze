@@ -31,8 +31,8 @@ persist.mot.proximity.touch=1
 #inphone calibration backup support
 ro.mot.hw.calibratedImager=1
 
-persist.mot.usb.mediasync = 1
-# persist.usb.android_config = 1
+#persist.mot.usb.mediasync = 1
+persist.usb.android_config = 1
 
 #Proximity sensor debounce time
 mot.proximity.delay=450
@@ -191,7 +191,7 @@ ro.com.google.gmsversion=4.1_r3
 ro.mot.phonemode.vzw4gphone=0
 cdma_ril.libpath=/system/lib/libmoto_ril.so
 ro.mot.setuptype=2
-ro.mot.internalsdcard=1
+#ro.mot.internalsdcard=1
 #ro.setupwizard.mode=DISABLED
 ro.mot.dpmext=true
 ro.com.google.clientid=android-motorola
@@ -206,7 +206,7 @@ ro.gsm.data_retry_config=max_retries=infinite,default_randomization=2000,0,0,800
 ro.telephony.ril.v3=writeaidonly,signalstrength
 
 # Vold switchability uncomment second line to swap
-ro.vold.switchablepair=/storage/sdcard0,/storage/sdcard1
+#ro.vold.switchablepair=/storage/sdcard0,/storage/sdcard1
 #persist.sys.vold.switchexternal=1
 
 # Enable ADB
@@ -217,4 +217,7 @@ dalvik.vm.dexopt-data-only=1
 
 # Set the region for HWC
 persist.hwc.mirroring.region=0:0:540:960
+
+# Simulate sdcard on /data/media
+#persist.fuse_sdcard=true
 
