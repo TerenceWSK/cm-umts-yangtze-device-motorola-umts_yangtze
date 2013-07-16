@@ -221,3 +221,7 @@ persist.hwc.mirroring.region=0:0:540:960
 # Simulate sdcard on /data/media
 #persist.fuse_sdcard=true
 
+# Enable the virtual keys
+# Disable by default. Some other 3rd party tools are better
+qemu.hw.mainkeys=0
+
