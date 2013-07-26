@@ -11,12 +11,17 @@ $(call inherit-product, vendor/cm/config/gsm.mk)
 # Setup device specific product configuration.
 #
 PRODUCT_NAME := cm_umts_yangtze
-PRODUCT_BRAND := GOPISE
+PRODUCT_BRAND := Motorola
 PRODUCT_DEVICE := umts_yangtze
 PRODUCT_MODEL := XT885
 PRODUCT_MANUFACTURER := MOTO
 PRODUCT_RELEASE_NAME := MOTOROLA RAZR V
 PRODUCT_SFX := umts
+
+# Private version string
+PRODUCT_PRIVATE_PREFIX := GOPISE
+PRODUCT_PRIVATE_VERNUM := v1.1
+PRODUCT_PRIVATE_VER := $(PRODUCT_PRIVATE_PREFIX)-$(PRODUCT_PRIVATE_VERNUM)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 960
