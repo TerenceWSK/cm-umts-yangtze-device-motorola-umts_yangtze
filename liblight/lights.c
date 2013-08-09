@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+//#define LOG_NDEBUG 0
 
 #define LOG_TAG "lights"
 
@@ -195,6 +196,7 @@ set_light_battery(struct light_device_t* dev,
     pthread_mutex_lock(&g_lock);
 
     g_battery = *state;
+    ALOGD("%s: battery LED", __func__);
     handle_light_locked(dev);
     pthread_mutex_unlock(&g_lock);
 
@@ -241,9 +243,12 @@ static int open_lights(const struct hw_module_t* module, char const* name,
     if (0 == strcmp(LIGHT_ID_BACKLIGHT, name)) {
         set_light = set_light_backlight;
     }
+    // No button LED supported on umts_yangtze
+    /* 
     else if (0 == strcmp(LIGHT_ID_BUTTONS, name)) {
         set_light = set_light_buttons;
     }
+    //*/
     else if (0 == strcmp(LIGHT_ID_BATTERY, name)) {
         set_light = set_light_battery;
     }
